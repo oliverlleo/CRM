@@ -1,0 +1,164 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex min-h-screen">
+<aside class="w-64 flex flex-col bg-gray-900 border-r border-gray-800">
+<div class="h-16 flex items-center px-6 gap-3">
+<svg class="text-[var(--primary-color)] size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold text-white">SalesTracker</h1>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium rounded-md text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+              Dashboard
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium rounded-md bg-[var(--primary-color)] text-gray-900 font-semibold" href="#">
+<span class="material-symbols-outlined">contacts</span>
+              Contatos
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium rounded-md text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined">work</span>
+              Oportunidades
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium rounded-md text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
+<span class="material-symbols-outlined">assessment</span>
+              Relatórios
+            </a>
+</nav>
+</aside>
+<main class="flex-1">
+<header class="h-16 flex items-center justify-between px-8 border-b border-gray-200 bg-white">
+<div class="flex-1">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full bg-gray-100 border-gray-300 rounded-full py-2 pl-10 pr-4 text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent" placeholder="Buscar contatos, oportunidades..." type="search"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative rounded-full p-2 hover:bg-gray-100">
+<span class="material-symbols-outlined text-gray-600">notifications</span>
+<span class="absolute top-1 right-1 block h-2 w-2 rounded-full bg-[var(--primary-color)]"></span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgYhywvNf3qqWE7SIteggT9a6VlwO31AqD_AarZs7FUufrVnGb-r4fdv6TWZ-sRHgmm84DsB2FaF_DoBoQCt2kEWLWjMahwrPl6RC1zbCP9Nacxb_rAqQpiUmEHexFULI7PPpHu5wkj8l8Ep65Q92RLln1CW0H868w887Lb9YlNiSOBglxCeJ_v4oY03BRAC2r7J3PygzexU41pWJinSgNPJSkQ1ltoblaGm-Tl77tPs6N6OrXUmbomfXPJENPlHkjdwmjxAW6PqWW");'></div>
+</div>
+</header>
+<div class="p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="text-3xl font-bold">Detalhes do Contato</h2>
+<p class="text-gray-500 mt-1">Visualize e gerencie todas as informações sobre este contato.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 flex items-center gap-6 shadow-sm border border-gray-200">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxnuIjTdAmVUMkqu1WSAOko4YdVzmPwOPQAOnRLrzaODJS6feyK75vkMYUsAKRiOqWtev-L7jvvnyD36YZrJT78TS4EiIiCzG8zfCGYDpp5_GBXCb47b0DLRMANbdm9gh0FDgynaWe8dkxI9gebW7Msj1oBAJiG5Fg0NyqLAo4O1NRH1-Zu7J6ekpYu8-VwUnR9F4T77jXj6UPYFkf0EeeQ1w1ZaxPDsXSuqOn-9HN2091Cn7hK8JWy1VUMl4J_3YQ97IAoFC_p5oL");'></div>
+<div>
+<h3 class="text-2xl font-bold">Ana Silva</h3>
+<p class="text-gray-600">Gerente de Marketing na Empresa X</p>
+<p class="text-gray-500 text-sm mt-1">Contato criado em 15 de março de 2023</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+<h3 class="text-xl font-bold mb-4">Histórico de Interações</h3>
+<div class="relative pl-8">
+<div class="absolute left-4 top-2 bottom-2 w-0.5 bg-gray-200"></div>
+<div class="space-y-6">
+<div class="relative flex items-start gap-4">
+<div class="absolute left-[-22px] top-1.5 flex items-center justify-center size-8 bg-[var(--primary-color)] rounded-full">
+<span class="material-symbols-outlined text-gray-900 text-base">email</span>
+</div>
+<div>
+<p class="font-semibold">E-mail enviado</p>
+<p class="text-gray-500 text-sm">10 de abril de 2023, 14:30</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="absolute left-[-22px] top-1.5 flex items-center justify-center size-8 bg-[var(--primary-color)] rounded-full">
+<span class="material-symbols-outlined text-gray-900 text-base">call</span>
+</div>
+<div>
+<p class="font-semibold">Chamada telefônica</p>
+<p class="text-gray-500 text-sm">12 de abril de 2023, 11:00</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="absolute left-[-22px] top-1.5 flex items-center justify-center size-8 bg-[var(--primary-color)] rounded-full">
+<span class="material-symbols-outlined text-gray-900 text-base">groups</span>
+</div>
+<div>
+<p class="font-semibold">Reunião presencial</p>
+<p class="text-gray-500 text-sm">15 de abril de 2023, 10:00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+<h3 class="text-xl font-bold mb-4">Notas</h3>
+<div class="prose max-w-none text-gray-700">
+<p>Ana demonstrou grande interesse em nossa solução de automação de marketing. Próximo passo: enviar proposta detalhada.</p>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+<h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-gray-200 pb-3">
+<span class="text-gray-500 text-sm">Email</span>
+<span class="font-medium text-gray-800">ana.silva@email.com</span>
+</div>
+<div class="flex justify-between items-center border-b border-gray-200 pb-3">
+<span class="text-gray-500 text-sm">Telefone</span>
+<span class="font-medium text-gray-800">+55 11 99999-8888</span>
+</div>
+<div class="flex justify-between items-center border-b border-gray-200 pb-3">
+<span class="text-gray-500 text-sm">Empresa</span>
+<span class="font-medium text-gray-800">Empresa X</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-sm">Cargo</span>
+<span class="font-medium text-gray-800">Gerente de Marketing</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+<h3 class="text-xl font-bold mb-4">Oportunidades Relacionadas</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 bg-gray-100 rounded-lg">
+<div class="flex items-center justify-center size-10 bg-gray-200 rounded-lg">
+<span class="material-symbols-outlined text-[var(--primary-color)]">folder</span>
+</div>
+<div>
+<p class="font-semibold">Automação de Marketing</p>
+<p class="text-gray-500 text-sm">Valor: R$ 50.000</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
